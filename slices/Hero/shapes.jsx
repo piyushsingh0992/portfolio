@@ -70,28 +70,23 @@ function Geometries() {
   ];
 
   const materials = [
-    new THREE.MeshStandardMaterial({ color: 0xbfdbfe, roughness: 0 }),
-    new THREE.MeshStandardMaterial({ color: 0xd1a3a4, roughness: 0.4 }),
-    new THREE.MeshStandardMaterial({ color: 0xfacc15, roughness: 0.1 }),
-    new THREE.MeshStandardMaterial({ color: 0x94a3b8, roughness: 0.1 }),
-    new THREE.MeshStandardMaterial({ color: 0x60a5fa, roughness: 0.1 }),
-
-    new THREE.MeshStandardMaterial({ color: 0xfb923c, roughness: 0 }),
-    new THREE.MeshStandardMaterial({ color: 0xc4b5fd, roughness: 0.4 }),
-    new THREE.MeshStandardMaterial({ color: 0xa7f3d0, roughness: 0.1 }),
-
+   
+    new THREE.MeshStandardMaterial({ color: 0x2ecc71, roughness: 0 }),
+    new THREE.MeshStandardMaterial({ color: 0xf1c40f, roughness: 0.4 }),
+    new THREE.MeshStandardMaterial({ color: 0xe74c3c, roughness: 0.1 }),
+    new THREE.MeshStandardMaterial({ color: 0x8e44ad, roughness: 0.1 }),
+    new THREE.MeshStandardMaterial({ color: 0x1abc9c, roughness: 0.1 }),
     new THREE.MeshStandardMaterial({
       roughness: 0,
       metalness: 0.5,
-      color: 0xbfdbfe,
+      color: 0x2980b9,
     }),
     new THREE.MeshStandardMaterial({
-      color: 0xa7f3d0,
+      color: 0x2c3e50,
       roughness: 0.1,
       metalness: 0.5,
     }),
   ];
-
   return geometries.map(({ position, r, geometry }) => (
     <Geometry
       key={JSON.stringify(position)} // Unique key
